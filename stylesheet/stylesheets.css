@@ -145,6 +145,13 @@ header, main, footer {
     object-fit: cover;
 }
 
+.login-logo {
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+    
+}
+
 .fit {
     object-fit: cover;
 }
