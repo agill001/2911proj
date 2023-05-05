@@ -1,10 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<link href="stylesheet/stylesheets.css" rel="stylesheet" />
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+		<title>ItemReunionInn</title>
+	</head>
+	<body>
+		<div class="flex_container">
+			<!-- make it min-height: 100vh and then make footer align-self: flex-end-->
+			<header>
+				<nav class="gridcolumns2-1 margin-top16">
+					<div class="flex-row space-around align-center">
+						<a><img src="images/Logo" class="logo" /></a>
+						<a href="#">Home</a>
+						<a href="#">Reports</a>
+						<a href="#">My Reports</a>
+						<a href="#">My Profile</a>
+					</div>
+					<div class="flex-row justify-center padding-8 align-center">
+						<form>
+							<img src="images/bell.svg" />
+							<input
+								type="text"
+								placeholder="What are you looking for?"
+							/>
+							<button type="submit">Search</button>
+						</form>
+					</div>
+				</nav>
+			</header>
+			<main>
+				<section class="hero padding-8">
+					<h1 class="fontsize64 padding-8">Welcome Back User!</h1>
+					<div class="gridcolumns3 gap16">
+						<div class="flex-column align-center card">
+							<h2 class="name">Your active cases</h2>
+							<p>
+								To find more about cases, click below. You have
+								a total of # cases
+							</p>
+							<button class="fancy-buttons">View</button>
+						</div>
+						<div class="flex-column align-center card">
+							<h2 class="name">History</h2>
+							<p>
+								Here you can find a list of all the lost item
+								reports that you have.
+							</p>
+							<button class="fancy-buttons">View</button>
+						</div>
+						<div class="flex-column align-center card">
+							<h2 class="name">Check on updates</h2>
+							<p>
+								Here you can check on status reports from our
+								staff on your lost item.
+							</p>
+							<button class="fancy-buttons">View</button>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="justify-selfend padding-8">
+				<div class="flex-row justify-center gap16">
+					<a href="#">Policy</a>
+					<a href="#">Contact Us</a>
+					<a href="#">FAQ</a>
+				</div>
+			</footer>
+		</div>
+	</body>
 </html>
