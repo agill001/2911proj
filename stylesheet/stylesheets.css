@@ -157,11 +157,19 @@ header, main, footer {
     margin: 8px;
 }
 
+
+/* Report html form inputs */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
 .custom_field {
     font-size: 14px;
     position: relative;
     padding-top: 20px;
     margin-bottom: 5px;
+    display: block;
   }
 
 .custom_field input {
@@ -199,8 +207,17 @@ input::placeholder {
 
 .custom_field input:valid + .placeholder,
 .custom_field input:focus + .placeholder {
-    top: 1px;
+    top: 5px;
     font-size: 10px;
     color: #222;
-    left: 5%;
+}
+
+
+.descript_textarea {
+    border: 3px #aaa solid;
+    margin: 1% 1% 1% 0%;
+    width: auto;
+    padding: 12px 18px;
+    border-radius: 5px;
+    width: 92%;
 }
