@@ -1,0 +1,206 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    flex-grow: 1;
+}
+
+header, main, footer {
+    flex-shrink: 0;
+}
+
+.flex_container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.gridcolumns2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.gridcolumns3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gridcolumns4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.gridcolumns1-1-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-self: flex-end;
+}
+
+.padding-8 {
+    padding: 8px;
+}
+
+.gap8 {
+    gap: 8px;
+}
+
+.gap16 {
+    gap: 16px;
+}
+
+.gap24 {
+    gap: 24px;
+}
+
+.margin-top16 {
+    margin-top: 16px;
+}
+
+.margin-topauto {
+    margin-top: auto;
+}
+
+
+.searchbar-color {
+    background-color: #D9D9D9;
+}
+
+.fontsize64 {
+    font-size: 64px;
+}
+
+.hero {
+    background-color: #D9D9D9;
+}
+
+.card {
+    background-color: #FF8282;
+    border: 1px solid #bacdd8;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 16px;
+}
+
+.fancy-buttons {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #0077ff;
+    background-color: #e0efff;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+}
+
+.logo {
+    height: 25%;
+    width: 25%;
+    object-fit: cover;
+}
+
+.fit {
+    object-fit: cover;
+}
+
+.staffcard{
+    background-color: #A1C6FD;
+    border: 1px solid #bacdd8;
+    padding: 8px;
+    border-radius: 12px;
+    margin: 8px;
+}
+
+.custom_field {
+    font-size: 14px;
+    position: relative;
+    padding-top: 20px;
+    margin-bottom: 5px;
+  }
+
+.custom_field input {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    outline: none;
+  }
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input::placeholder {
+    color: #222;
+    transition: color 0.3s ease;
+}
+
+.custom_field .placeholder {
+    position: absolute;
+    left: 12px;
+    top: calc(50% + 10px);
+    transform:translateY(-50%);
+    color: #aaa;
+    transition: top 0.3s ease,
+        font-size 0.3s ease,
+        color 0.3s ease;
+}
+
+.custom_field input:valid + .placeholder,
+.custom_field input:focus + .placeholder {
+    top: 1px;
+    font-size: 10px;
+    color: #222;
+    left: 5%;
+}
