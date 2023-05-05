@@ -1,92 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="stylesheets/stylesheet.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Report an Item Lost</title>
-</head>
-    <body>
-        <header>
-            <nav class="gridcolumns2-1 margin-top16">
-                <div class="flex-row space-around align-center">
-                    <a><img src="images/Logo" alt="ItemReunionInn logo" class="logo"></a>
-                    <a href="#">Home</a>
-                    <a href="#">Reports</a>
-                    <a href="#">My Reports</a>
-                    <a href="#">My Profile</a>
-                </div>
-                <div class="flex-row justify-center padding-8 align-center">
-                    <form>
-                        <img src="images/bell.svg" alt="Notification Bell">
-                        <input
-                            type="text"
-                            placeholder="What are you looking for?">
-                        <button type="submit">Search</button>
-                    </form>
-                </div>
-            </nav>
-        </header>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="stylesheets/stylesheet.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<title>Report an Item Lost</title>
+	</head>
+	<body>
+		<div>
+			<!-- make it min-height: 100vh and then make footer align-self: flex-end-->
+			<header>
+				<nav class="gridcolumns2-1 margin-top16">
+					<div class="flex-row space-around align-center">
+						<a><img src="images/Logo" alt="ItemReunionInn logo" class="logo"></a>
+						<a href="#">Home</a>
+						<a href="#">Reports</a>
+						<a href="#">My Reports</a>
+						<a href="#">My Profile</a>
+					</div>
+					<div class="flex-row justify-center padding-8 align-center">
+						<form>
+							<img src="images/bell.svg" alt="Notification Bell">
+							<input
+								type="text"
+								placeholder="What are you looking for?">
+							<button type="submit">Search</button>
+						</form>
+					</div>
+				</nav>
+			</header>
+			<main>
+				<section class="hero padding-8">
+						<!-- personal information -->
+					<div class="container">
+						<h1>Enter your personal details below.</h1>
+						<form>
+							<div class="row">
+								<div class="col-sm-3 col-md-3 col-lg-4">
+									<label class="custom_field">
+										<input type="text" required> 
+										<span class="placeholder">First Name </span>
+									</label>
 
-        <main>
-            <section class="hero padding-8">
-                    <!-- personal information -->
-                <div class="container">
-                    <h1>Enter your personal details below.</h1>
-                    <form>
-                        <div class="row">
-                            <div class="col-sm-3 col-md-3 col-lg-4">
-                                <label class="custom_field">
-                                    <input type="text" required> 
-                                    <span class="placeholder">First Name </span>
-                                </label>
+									<label class="custom_field">
+										<input type="text" required> 
+										<span class="placeholder">Address</span>
+									</label>
 
-                                <label class="custom_field">
-                                    <input type="text" required> 
-                                    <span class="placeholder">Address</span>
-                                </label>
+								  <label class="custom_field">
+									<input type="text" required> 
+									<span class="placeholder">Driver's License</span>
+								</label>
+								</div>
 
-                              <label class="custom_field">
-                                <input type="text" required> 
-                                <span class="placeholder">Driver's License</span>
-                            </label>
-                            </div>
+								<div class="col-sm-3 col-md-3 col-lg-4">
+									<label class="custom_field">
+										<input type="text" required> 
+										<span class="placeholder">Last Name</span>
+									</label>
 
-                            <div class="col-sm-3 col-md-3 col-lg-4">
-                                <label class="custom_field">
-                                    <input type="text" required> 
-                                    <span class="placeholder">Last Name</span>
-                                </label>
+									<label class="custom_field">
+										<input type="tel" required> 
+										<span class="placeholder">Phone Number</span>
+								  </label>
 
-                                <label class="custom_field">
-                                    <input type="tel" required> 
-                                    <span class="placeholder">Phone Number</span>
-                              </label>
+									<label class="custom_field">
+										<input type="text" required> 
+										<span class="placeholder">Booking Confirmation Number</span>
+									  </label>
+								</div>
+								<div class="col">
+									<label class="custom_field">
+										<input
+										placeholder="Date of Birth"
+										type="text"
+										onblur="(this.type='text')"
+										onfocus="(this.type='date')"/>
+									</label>
 
-                                <label class="custom_field">
-                                    <input type="text" required> 
-                                    <span class="placeholder">Booking Confirmation Number</span>
-                                  </label>
-                            </div>
-                            <div class="col">
-                                <label class="custom_field">
-                                    <input
-                                    placeholder="Date of Birth"
-                                    type="text"
-                                    onblur="(this.type='text')"
-                                    onfocus="(this.type='date')"/>
-                                </label>
+									<label class="custom_field">
+										<input type="email" required> 
+										<span class="placeholder">Email</span>
+									</label>
+								</div>
 
-                                <label class="custom_field">
-                                    <input type="email" required> 
-                                    <span class="placeholder">Email</span>
-                                </label>
-                            </div>
+								</div>
+							</div> <br>
 
-                            <div class="container">
+							
+							<div class="container">
 								<h3>Details about the lost item.</h3>
 								<div class="row">
 									<div class="col-sm-4">
@@ -116,57 +121,55 @@
 								<textarea class="descript_textarea" rows="10" cols="100" placeholder="Please describe your item!"></textarea>
 								</div>
 
-                                <div class="container">
-                                    <h3>Contact Information When Found</h3>
-    
-                                    <label class="custom_field">
-                                        <input type="text" required> 
-                                        <span class="placeholder">First Name </span>
-                                      </label>
-    
-                                      <label class="custom_field">
-                                        <input type="text" required> 
-                                        <span class="placeholder">Last Name </span>
-                                      </label>
-    
-                                     <label class="custom_field">
-                                        <input type="email" required> 
-                                        <span class="placeholder">Email </span>
-                                     </label>
-    
-                                      <label class="custom_field">
-                                        <input type="tel" required> 
-                                        <span class="placeholder">Phone Number </span>
-                                  </label>
-    
-                                  <label class="custom_field">
-                                    <input
-                                    placeholder="Time of day when available"
-                                    type="text"
-                                    onblur="(this.type='text')"
-                                    onfocus="(this.type='time')"/>
-                                </label>
-                                
-                                </div> <br>
-    
-                                <div class="container">
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                    <input type="reset" class="btn btn-secondary mx-3">
-                                </div>
-                            </form>
-                        
+							<div class="container">
+								<h3>Contact Information When Found</h3>
 
-                            </div>
-                        </div> <br>
+								<label class="custom_field">
+									<input type="text" required> 
+									<span class="placeholder">First Name </span>
+							  	</label>
 
-            <footer class="justify-selfend">
-                <div class="flex-row justify-center gap16">
-                    <a href="#">Policy</a>
-                    <a href="#">FAQ</a>
-                    <a href="#">Contact Us</a>
-                    <a href="#">About Us</a>
-                </div>
-            </footer>
-        </div>
-    </body>
+							  	<label class="custom_field">
+									<input type="text" required> 
+									<span class="placeholder">Last Name </span>
+							  	</label>
+
+							 	<label class="custom_field">
+									<input type="email" required> 
+									<span class="placeholder">Email </span>
+							 	</label>
+
+							  	<label class="custom_field">
+									<input type="tel" required> 
+									<span class="placeholder">Phone Number </span>
+							  </label>
+
+							  <label class="custom_field">
+								<input
+								placeholder="Time of day when available"
+								type="text"
+								onblur="(this.type='text')"
+								onfocus="(this.type='time')"/>
+							</label>
+							
+							</div> <br>
+
+							<div class="container">
+								<button type="submit" class="btn btn-primary">Submit</button>
+								<input type="reset" class="btn btn-secondary mx-3">
+							</div>
+						</form>
+					</div>
+				</section>
+			</main>
+			<footer class="justify-selfend">
+				<div class="flex-row justify-center gap16">
+					<a href="#">Policy</a>
+					<a href="#">FAQ</a>
+					<a href="#">Contact Us</a>
+					<a href="#">About Us</a>
+				</div>
+			</footer>
+		</div>
+	</body>
 </html>
