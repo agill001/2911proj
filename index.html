@@ -26,9 +26,7 @@
 					<div class="flex-row space-around align-center">
 						<a><img src="images/Logo" class="logo" /></a>
 						<a href="#">Home</a>
-						<a href="#">Reports</a>
-						<a href="#">My Reports</a>
-						<a href="#">My Profile</a>
+						<a href="userprofile.html">My Profile</a>
 					</div>
 					<div class="flex-row justify-center padding-8 align-center">
 						<form>
@@ -45,30 +43,52 @@
 			<main>
 				<section class="hero padding-8">
 					<h1 class="fontsize64 padding-8">Welcome Back User!</h1>
-					<div class="gridcolumns3 gap16">
-						<div class="flex-column align-center card">
-							<h2 class="name">Your active cases</h2>
-							<p>
-								To find more about cases, click below. You have
-								a total of # cases
-							</p>
-							<button class="fancy-buttons">View</button>
-						</div>
-						<div class="flex-column align-center card">
-							<h2 class="name">History</h2>
-							<p>
-								Here you can find a list of all the lost item
-								reports that you have.
-							</p>
-							<button class="fancy-buttons">View</button>
-						</div>
-						<div class="flex-column align-center card">
-							<h2 class="name">Check on updates</h2>
-							<p>
-								Here you can check on status reports from our
-								staff on your lost item.
-							</p>
-							<button class="fancy-buttons">View</button>
+					<div class="container">
+						<div class="row">
+							<div
+								class="card text-center col"
+								style="width: 18rem"
+							>
+								<div class="card-body">
+									<h5 class="card-title">Active Cases</h5>
+									<p class="card-text">
+										Check here for all the active lost item
+										cases from all of the guests.
+									</p>
+									<a
+										href="usercases.html"
+										class="btn btn-primary"
+										>View</a
+									>
+								</div>
+							</div>
+							<div
+								class="card text-center col"
+								style="width: 18rem"
+							>
+								<div class="card-body">
+									<h5 class="card-title">Case History</h5>
+									<p class="card-text">
+										This shows all pending tickets aswell as
+										closed tickets.
+									</p>
+									<a href="#" class="btn btn-primary">View</a>
+								</div>
+							</div>
+							<div
+								class="card text-center col"
+								style="width: 18rem"
+							>
+								<div class="card-body">
+									<h5 class="card-title">Case Updates</h5>
+									<p class="card-text">
+										With supporting staff, click below to
+										see updates regarding to your lost item
+										cases.
+									</p>
+									<a href="#" class="btn btn-primary">View</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>

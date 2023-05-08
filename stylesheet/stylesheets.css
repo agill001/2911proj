@@ -114,12 +114,7 @@ header, main, footer {
     background-color: #D9D9D9;
 }
 
-.card {
-    background-color: #FF8282;
-    border: 1px solid #bacdd8;
-    padding: 8px;
-    border-radius: 12px;
-}
+
 
 .name {
     font-size: 24px;
