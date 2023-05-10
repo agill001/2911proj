@@ -223,3 +223,32 @@ input::placeholder {
     border-radius: 5px;
     width: 92%;
 }
+
+@media screen and (max-width: 1000px) {
+    main {
+        display: block;
+
+    }
+
+    .custom_field {
+      font-size: 12px;
+      padding-top: 15px;
+      margin-bottom: 10px;
+    }
+    
+    .custom_field input {
+      padding: 10px;
+      width: 100%;
+    }
+    
+    .custom_field .placeholder {
+      left: 10px;
+      top: calc(50% + 8px);
+      font-size: 12px;
+    }
+    
+    .descript_textarea {
+      width: 100%;
+    }
+  }
+  
