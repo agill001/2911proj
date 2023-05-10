@@ -224,6 +224,12 @@ input::placeholder {
     width: 92%;
 }
 
+.nav-link-spacing {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
 @media screen and (max-width: 1000px) {
     main {
         display: block;
