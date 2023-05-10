@@ -12,24 +12,25 @@
 	<body>
 		<div>
 			<header>
-				<nav class="gridcolumns2-1 margin-top16">
-					<div class="flex-row space-around align-center">
-						<a><img src="images/Logo" alt="ItemReunionInn logo" class="logo"></a>
-						<a href="index.html" title="Home Page">Home</a>
-						<a href="#">Reports</a>
-						<a href="#">My Reports</a>
-						<a href="#">My Profile</a>
+				<nav class="navbar navbar-expand bg-body-tertiary">
+					<div class="container-fluid">
+						<a class="navbar-brand"><img src="images/Logo" class="logo"/></a>
+						<div class="row justify-content-center align-items-center">
+							<div class="col-auto">
+								<a class="nav-link" href="index.html">Home</a>
+							</div>
+							<div class="col-auto">
+								<a class="nav-link" href="userprofile.html">My Profile</a>
+							</div>
+						</div>
+						<div class="flex-row padding-8 align-center">
+						  	<form class="d-flex" role="search">
+								<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+								<button class="btn btn-outline-success" type="submit">Search</button>
+							</form>
+						</div>
 					</div>
-					<div class="flex-row justify-center padding-8 align-center">
-						<form>
-							<img src="images/bell.svg" alt="Notification Bell">
-							<input
-								type="text"
-								placeholder="What are you looking for?">
-							<button type="submit">Search</button>
-						</form>
-					</div>
-				</nav>
+				</nav>				  
 			</header>
 			<main>
 				<section class="hero padding-8">
@@ -68,7 +69,7 @@
 
 									<label class="custom_field">
 										<input type="text" required> 
-										<span class="placeholder">Booking Confirmation Number</span>
+										<span class="placeholder">Booking Confirmation #</span>
 									  </label>
 								</div>
 								<div class="col">
