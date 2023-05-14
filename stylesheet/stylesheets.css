@@ -114,12 +114,7 @@ header, main, footer {
     background-color: #D9D9D9;
 }
 
-.card {
-    background-color: #FF8282;
-    border: 1px solid #bacdd8;
-    padding: 8px;
-    border-radius: 12px;
-}
+
 
 .name {
     font-size: 24px;
@@ -228,3 +223,38 @@ input::placeholder {
     border-radius: 5px;
     width: 92%;
 }
+
+.nav-link-spacing {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    main {
+        display: block;
+
+    }
+
+    .custom_field {
+      font-size: 12px;
+      padding-top: 15px;
+      margin-bottom: 10px;
+    }
+    
+    .custom_field input {
+      padding: 10px;
+      width: 100%;
+    }
+    
+    .custom_field .placeholder {
+      left: 10px;
+      top: calc(50% + 8px);
+      font-size: 12px;
+    }
+    
+    .descript_textarea {
+      width: 100%;
+    }
+  }
+  
