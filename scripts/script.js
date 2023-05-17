@@ -1,31 +1,15 @@
-const changetheme = document.querySelector(".b2");
-const sidebar = document.querySelector(".div1");
-const wholebar = document.querySelector(".div2")
-const button = document.querySelectorAll(".b2");
-const textColor = document.querySelectorAll("h1")
+const toggle = document.getElementById('toggleDark');
+const body = document.querySelector('body');
 
-function darktheme () {
-    
-  wholebar.classList.toggle("darkmode1")
-  sidebar.classList.toggle("darkmode");
-    
-    for (let item of button) {
-      item.classList.toggle("darkmode");
+toggle.addEventListener('click', function(){
+    this.classList.toggle('bi-moon');
+    if(this.classList.toggle('bi-brightness-high-fill')){
+        body.style.background = 'white';
+        body.style.color = 'black';
+        body.style.transition = '2s';
+    }else{
+        body.style.background = 'black';
+        body.style.color = 'white';
+        body.style.transition = '2s';
     }
-    for (let texts of textColor) {
-        texts.classList.toggle("textcolor")
-    }
-
-}
-
-changetheme.addEventListener("click", darktheme);
-
-
-const changeText = () => {
-  if (changetheme.textContent === "Dark Theme") {
-    changetheme.textContent = "Light Theme";
-  } else if (changetheme.textContent === "Light Theme") {
-    changetheme.textContent = "Dark Theme";
-  }
-};
-changetheme.addEventListener("click", changeText);
+});
