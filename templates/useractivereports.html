@@ -22,21 +22,57 @@
             <div class="flex_container">
                 <!-- make it min-height: 100vh and then make footer align-self: flex-end-->
                 <header>
-                    <nav class="gridcolumns2-1 margin-top16">
-                        <div class="flex-row space-around align-center">
-                            <a><img src="../images/Logo" class="logo" /></a>
-                            <a href="index.html">Home</a>
-                            <a href="report.html">Reports</a>
-                            <a href="userprofile.html">My Profile</a>
-                        </div>
-                        <div class="flex-row justify-center padding-8 align-center">
-                            <form>
-                                <input
-                                    type="text"
-                                    placeholder="What are you looking for?"
-                                />
-                                <button type="submit">Search</button>
-                            </form>
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                        <div class="container-fluid">
+                            <a class="navbar-brand"
+                                ><img
+                                    src="../images/Logo"
+                                    alt="Logo"
+                                    width="100"
+                                    height="100"
+                                    class="d-lg-inline-block align-top"
+                            /></a>
+                            <button
+                                class="navbar-toggler"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav"
+                                aria-controls="navbarNav"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation"
+                            >
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link active"
+                                            aria-current="page"
+                                            href="staffdashboard.html"
+                                            >Home</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="staffreport.html"
+                                            >Report</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="staffprofile.html"
+                                            >My Profile</a
+                                        >
+                                    </li>
+                                </ul>
+                                <form class="d-flex">
+                                    <input
+                                        class="form-control me-2"
+                                        type="search"
+                                        placeholder="What are you looking for?"
+                                    />
+                                    <button type="submit">Search</button>
+                                </form>
+                            </div>
                         </div>
                     </nav>
                 </header>
