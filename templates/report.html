@@ -14,6 +14,7 @@
 	<body>
 		<div class="flex_container">
 			<header>
+<<<<<<< HEAD
 				<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 					<div class="container-fluid">
 						<a class="navbar-brand"
@@ -65,6 +66,29 @@
 								<button type="submit">Search</button>
 							</form>
 						</div>
+=======
+				<nav class="gridcolumns2-1 margin-top16">
+					<div class="flex-row space-around align-center">
+                        <a>
+                            <img src="{{ url_for('static', filename='images/logo') }}" alt="Logo" />
+                          </a>
+                        <a href="/home" title="Home Page">Home</a>
+                        <a href="/usercases">Reports</a>
+                        <a href="/userhistory">My Reports</a>
+                        <a href="/userprofile">My Profile</a>
+					</div>
+					<div class="flex-row justify-center padding-8 align-center">
+						<form>
+							<img
+                            src="{{ url_for('static', filename='images/bell.svg') }}"
+                            alt="bell"
+                          />
+							<input
+								type="text"
+								placeholder="What are you looking for?">
+							<button type="submit">Search</button>
+						</form>
+>>>>>>> dd7634e (fixed more routes)
 					</div>
 				</nav>
 			</header>

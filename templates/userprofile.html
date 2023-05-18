@@ -26,6 +26,7 @@
         <div class="flex_container">
             <!-- make it min-height: 100vh and then make footer align-self: flex-end-->
             <header>
+<<<<<<< HEAD
 				<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 					<div class="container-fluid">
 						<a class="navbar-brand"
@@ -80,6 +81,34 @@
 					</div>
 				</nav>
 			</header>
+=======
+                <nav class="gridcolumns2-1 margin-top16">
+                    <div class="flex-row space-around align-center">
+                        <a>
+                            <img src="{{ url_for('static', filename='images/logo') }}" alt="Logo" />
+                          </a>
+                        <a href="/home">Home</a>
+                        <a href="/report">Reports</a>
+                        <a href="/usercases">My Reports</a>
+                        <a href="/userprofile">My Profile</a>
+                    </div>
+                    <div class="flex-row justify-center padding-8 align-center">
+                        <form>
+                            <img
+                            src="{{ url_for('static', filename='images/bell.svg') }}"
+                            alt="bell"
+                          />
+
+                            <input
+                                type="text"
+                                placeholder="What are you looking for?"
+                            />
+                            <button type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </header>
+>>>>>>> dd7634e (fixed more routes)
             <main>
                 <section class="hero padding-8">
                     <div class="container rounded bg-white mt-5 mb-5">

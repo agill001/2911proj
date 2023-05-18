@@ -27,13 +27,21 @@
       <header>
         <nav class="gridcolumns2-1 margin-top16">
           <div class="flex-row space-around align-center">
-            <a><img src="images/Logo" class="logo" /></a>
-            <a href="#">Home</a>
-            <a href="userprofile.html">My Profile</a>
+            <a>
+              <img
+                src="{{ url_for('static', filename='images/logo') }}"
+                alt="Logo"
+              />
+            </a>
+            <a href="/home">Home</a>
+            <a href="/userprofile">My Profile</a>
           </div>
           <div class="flex-row justify-center padding-8 align-center">
             <form>
-              <img src="images/bell.svg" />
+              <img
+                src="{{ url_for('static', filename='images/bell.svg') }}"
+                alt="bell"
+              />
               <input type="text" placeholder="What are you looking for?" />
               <button type="submit">Search</button>
             </form>
