@@ -21,13 +21,9 @@
   </head>
   <body>
     <div class="login-logo">
-      <a
-        ><img
-          src="images/Logo"
-          width="250px"
-          height="200px"
-          alt="ItemReunionInn Logo"
-      /></a>
+      <a>
+        <img src="{{ url_for('static', filename='images/logo') }}" alt="Logo" />
+      </a>
     </div>
 
     <div class="container border border-primary">

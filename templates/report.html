@@ -14,15 +14,20 @@
 			<header>
 				<nav class="gridcolumns2-1 margin-top16">
 					<div class="flex-row space-around align-center">
-						<a><img src="images/Logo" alt="ItemReunionInn logo" class="logo"></a>
-						<a href="index.html" title="Home Page">Home</a>
-						<a href="#">Reports</a>
-						<a href="#">My Reports</a>
-						<a href="#">My Profile</a>
+                        <a>
+                            <img src="{{ url_for('static', filename='images/logo') }}" alt="Logo" />
+                          </a>
+                        <a href="/home" title="Home Page">Home</a>
+                        <a href="/usercases">Reports</a>
+                        <a href="/userhistory">My Reports</a>
+                        <a href="/userprofile">My Profile</a>
 					</div>
 					<div class="flex-row justify-center padding-8 align-center">
 						<form>
-							<img src="images/bell.svg" alt="Notification Bell">
+							<img
+                            src="{{ url_for('static', filename='images/bell.svg') }}"
+                            alt="bell"
+                          />
 							<input
 								type="text"
 								placeholder="What are you looking for?">
