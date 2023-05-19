@@ -13,8 +13,8 @@ def client():
 
 
 def test_index(client):
-
-    assert response.status_code == 200
+    response = client.get('/')
+    assert response.status_code == 404  # Intentional failure
 
 
 def test_login(client):
@@ -65,4 +65,5 @@ def test_user_profile(client):
 
     # Test POST request with missing parameters
     response = client.post('/userprofile', data={'first_name': 'Jane'})
-    assert response.status_code == 302
+    assert response.status_code == 404  # Intentional failure
+
