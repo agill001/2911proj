@@ -13,13 +13,13 @@ def client():
 
 
 def test_index(client):
-    response = client.get('/home')
+
     assert response.status_code == 200
 
 
 def test_login(client):
     # Test GET request
-    response = client.get('/login')
+  
     assert response.status_code == 200
 
     # Test POST request with 6-digit input
