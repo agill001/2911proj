@@ -89,16 +89,17 @@
                                         <h4 class="text-right">Profile Settings</h4>
                                     </div>
 									<form method="POST" action="/userprofile">
-                                    <div class="row mt-2">
-                                        <div class="col-md-6"><label class="labels">First Name</label><input type="text" class="form-control" placeholder="first name" value=""></div>
-                                        <div class="col-md-6"><label class="labels">Last Name</label><input type="text" class="form-control" value="" placeholder="surname"></div>
-                                    </div>
-                                    <div class="row mt-2">
-                                        <div class="col-md-12"><label class="labels">Email</label><input type="text" class="form-control" placeholder="enter email" value=""></div>
-                                        <div class="col-md-12"><label class="labels">Phone Number</label><input type="text" class="form-control" placeholder="phone number" value=""></div>
-                                        
-                                
-                                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>
+										<div class="row mt-2">
+											<div class="col-md-6"><label class="labels">First Name</label><input type="text" class="form-control" placeholder="first name" value="" name="first_name"></div>
+											<div class="col-md-6"><label class="labels">Last Name</label><input type="text" class="form-control" value="" placeholder="surname" name="last_name"></div>
+										</div>
+										<div class="row mt-2">
+											<div class="col-md-12"><label class="labels">Email</label><input type="text" class="form-control" placeholder="enter email" value="" name="email"></div>
+											<div class="col-md-12"><label class="labels">Phone Number</label><input type="text" class="form-control" placeholder="phone number" value="" name="phone_number"></div>
+										</div>
+										
+
+                                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="submit">Save Profile</button></div>
                                 </div>
 							</form>
                             </div>
