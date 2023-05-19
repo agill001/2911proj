@@ -23,29 +23,57 @@
 	<body>
             <div class="flex_container">
                 <header>
-
-                    <nav class="gridcolumns2-1 margin-top16">
-                        <div class="flex-row space-around align-center">
-                            <a>
-                                <img src="{{ url_for('static', filename='images/logo') }}" alt="Logo" />
-                              </a>
-                            <a href="/staff_dashboard">Home</a>
-                            <a href="/staff_report">Report</a>
-                            <a href="/staffprofile">My Profile</a>
-                        </div>
-                        <div class="flex-row justify-center padding-8 align-center">
-                            <form>
-                                <img
-                                src="{{ url_for('static', filename='images/bell.svg') }}"
-                                alt="bell"
-                              />
-                                <input
-                                    type="text"
-                                    placeholder="What are you looking for?"
-                                />
-                                <button type="submit">Search</button>
-                            </form>
-
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                        <div class="container-fluid">
+                            <a class="navbar-brand"
+                                ><img
+                                    src="../images/Logo"
+                                    alt="Logo"
+                                    width="100"
+                                    height="100"
+                                    class="d-lg-inline-block align-top"
+                            /></a>
+                            <button
+                                class="navbar-toggler"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav"
+                                aria-controls="navbarNav"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation"
+                            >
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link active"
+                                            aria-current="page"
+                                            href="staffdashboard.html"
+                                            >Home</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="staff_report.html"
+                                            >Reports</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="staffprofile.html"
+                                            >My Profile</a
+                                        >
+                                    </li>
+                                </ul>
+                                <form class="d-flex">
+                                    <input
+                                        class="form-control me-2"
+                                        type="search"
+                                        placeholder="What are you looking for?"
+                                    />
+                                    <button type="submit">Search</button>
+                                </form>
+                            </div>
                         </div>
                     </nav>
                 </header>
