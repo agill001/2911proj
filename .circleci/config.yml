@@ -38,6 +38,7 @@ jobs:
           command: |
             export PYTHONPATH=$PYTHONPATH:/home/circleci/project
             export PYTHONPATH=$PYTHONPATH:/home/circleci/project/tests
+            echo $PYTHONPATH
       - run:
           name: Install pytest
           command: pip install pytest
