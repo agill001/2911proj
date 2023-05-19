@@ -7,7 +7,12 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1, shrink-to-fit=no"
 		/>
-		<link href="../stylesheet/stylesheets.css" rel="stylesheet" />
+
+		<link
+			href="{{ url_for('static', filename='stylesheet/stylesheets.css') }}"
+			rel="stylesheet"
+		/>
+
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
@@ -18,13 +23,12 @@
 	</head>
 	<body>
 		<div class="login-logo">
-			<a
-				><img
-					src="../images/Logo"
-					width="250px"
-					height="200px"
-					alt="ItemReunionInn Logo"
-			/></a>
+			<a>
+				<img
+					src="{{ url_for('static', filename='images/logo') }}"
+					alt="Logo"
+				/>
+			</a>
 		</div>
 
 		<div class="container border border-primary">
