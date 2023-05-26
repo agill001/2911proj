@@ -10,7 +10,7 @@
 			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 			crossorigin="anonymous"
 		/>
-		<link href="{{ url_for('static', filename='../stylesheet/stylesheets.css') }}" rel="stylesheet" />
+		<link href="{{ url_for('static', filename='stylesheet/stylesheets.css') }}" rel="stylesheet" />
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -24,13 +24,15 @@
 				<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 					<div class="container-fluid">
 						<a class="navbar-brand"
-							><img
-								src="{{ url_for('static', filename='images/logo') }}"
+							>		
+							<img
+								src="{{ url_for('static', filename='images/logo') }}" alt="Logo"
 								alt="Logo"
 								width="100"
 								height="100"
 								class="d-lg-inline-block align-top"
-						/></a>
+						/>
+						</a>
 						<button
 							class="navbar-toggler"
 							type="button"
@@ -79,45 +81,47 @@
 				<section class="hero padding-8">
 						<!-- personal information -->
 					<div class="container">
+
 						<h1>Enter your personal details below.</h1>
-						<form>
+						<form method="POST" action="/report">
+
 							<div class="row">
 								<div class="col-sm-3 col-md-3 col-lg-4">
 									<label class="custom_field">
-										<input type="text" required> 
+										<input type="text" name="first_name" required> 
 										<span class="placeholder">First Name </span>
 									</label>
 
 									<label class="custom_field">
-										<input type="text" required> 
+										<input type="text" name="address"  required> 
 										<span class="placeholder">Address</span>
 									</label>
 
 								  <label class="custom_field">
-									<input type="text" required> 
+									<input type="text" name="drivers_license" required> 
 									<span class="placeholder">Driver's License</span>
 								</label>
 								</div>
 
 								<div class="col-sm-3 col-md-3 col-lg-4">
 									<label class="custom_field">
-										<input type="text" required> 
+										<input type="text" name="last_name"  required> 
 										<span class="placeholder">Last Name</span>
 									</label>
 
 									<label class="custom_field">
-										<input type="tel" required> 
+										<input type="tel" name="phone_number" required> 
 										<span class="placeholder">Phone Number</span>
 								  </label>
 
 									<label class="custom_field">
-										<input type="text" required> 
+										<input type="text" name="booking_confirmation" required> 
 										<span class="placeholder">Booking Confirmation #</span>
 									  </label>
 								</div>
 								<div class="col">
 									<label class="custom_field">
-										<input
+										<input name="dob"
 										placeholder="Date of Birth"
 										type="text"
 										onblur="(this.type='text')"
@@ -125,7 +129,7 @@
 									</label>
 
 									<label class="custom_field">
-										<input type="email" required> 
+										<input type="email" name="email" required> 
 										<span class="placeholder">Email</span>
 									</label>
 								</div>
@@ -139,19 +143,19 @@
 								<div class="row">
 									<div class="col-sm-4">
 										<label class="custom_field">
-											<input type="text" required> 
+											<input type="text" name="item_name"  required> 
 											<span class="placeholder">Item Name</span>
 										</label>
 									</div>
 									<div class="col-sm-4">
 										<label class="custom_field">
-											<input type="text" required> 
+											<input type="text"  name="last_known_location" required> 
 											<span class="placeholder">Last Known Location</span>
 										</label>
 									</div>
 									<div class="col-sm-4">
 										<label class="custom_field">
-											<input
+											<input name="time_item_lost"
 											placeholder="Date and time item was lost"
 											type="text"
 											onblur="(this.type='text')"
@@ -161,34 +165,34 @@
 								</div>
 							</div>
 								<div class="container">
-								<textarea class="descript_textarea" rows="10" cols="100" placeholder="Please describe your item!"></textarea>
+								<textarea class="descript_textarea" name="item_description" rows="10" cols="100" placeholder="Please describe your item!"></textarea>
 								</div>
 
 							<div class="container">
 								<h3>Contact Information When Found</h3>
 
 								<label class="custom_field">
-									<input type="text" required> 
+									<input type="text" name="contact_first_name" required> 
 									<span class="placeholder">First Name </span>
 							  	</label>
 
 							  	<label class="custom_field">
-									<input type="text" required> 
+									<input type="text" name="contact_last_name" required> 
 									<span class="placeholder">Last Name </span>
 							  	</label>
 
 							 	<label class="custom_field">
-									<input type="email" required> 
+									<input type="email" name="contact_email"required> 
 									<span class="placeholder">Email </span>
 							 	</label>
 
 							  	<label class="custom_field">
-									<input type="tel" required> 
+									<input type="tel" name="contact_phone_number" required> 
 									<span class="placeholder">Phone Number </span>
 							  </label>
 
 							  <label class="custom_field">
-								<input
+								<input name="contact_time_availability"
 								placeholder="Time of day when available"
 								type="text"
 								onblur="(this.type='text')"
@@ -216,4 +220,5 @@
 		</div>
 	</body>
 </html>
+
 
