@@ -11,7 +11,7 @@
 			crossorigin="anonymous"
 		/>
 		<link
-			href="{{ url_for('static', filename='../stylesheet/stylesheets.css') }}"
+			href="{{ url_for('static', filename='stylesheet/stylesheets.css') }}"
 			rel="stylesheet"
 		/>
 		<script
@@ -27,13 +27,10 @@
 			<header>
 				<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 					<div class="container-fluid">
-						<a class="navbar-brand"
-							><img
+						<a class="navbar-brand">
+							<img
 								src="{{ url_for('static', filename='images/logo') }}"
 								alt="Logo"
-								width="100"
-								height="100"
-								class="d-lg-inline-block align-top"
 						/></a>
 						<button
 							class="navbar-toggler"
@@ -90,9 +87,7 @@
 									Check here for all the active lost item
 									cases from all of the guests.
 								</p>
-								<a
-									href="/useractivereports"
-									class="btn btn-primary"
+								<a href="/usercases" class="btn btn-primary"
 									>View</a
 								>
 							</div>
@@ -103,14 +98,14 @@
 								<p class="card-text">
 									This shows all tickets you have submitted.
 								</p>
-								<a href="/userhistory" class="btn btn-primary"
+								<a href="/usercases" class="btn btn-primary"
 									>View</a
 								>
 							</div>
 						</div>
 						<div class="card text-center col" style="width: 18rem">
 							<div class="card-body">
-								<h5 class="card-title">Open Cases</h5>
+								<h5 class="card-title">Case Updates</h5>
 								<p class="card-text">
 									With supporting staff, click below to see
 									updates regarding to your lost item cases.
