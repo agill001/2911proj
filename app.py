@@ -1,5 +1,5 @@
 import csv
-from flask import Flask, request, render_template, jsonify, redirect, url_for
+from flask import Flask, request, render_template, redirect, url_for
 import random
 import string
 
@@ -53,14 +53,53 @@ def create_app():
 
     @app.route('/report', methods=['GET', 'POST'])
     def report():
-        return render_template('report.html')
+        if request.method == 'POST':
+            # Extract data from form that u need
+            first_name = request.form.get('first_name')
+            last_name = request.form.get('last_name')
+            item_name = request.form.get('item_name')
+            item_description = request.form.get('item_description')
+
+            # Assign default status as Open
+            status = 'Open'
+
+            # Create a list of the form data u need
+            data = [first_name, last_name,
+                    item_name, item_description, status]
+
+            # Write data to a CSV file
+            with open('cases.csv', 'a', newline='') as f:
+                writer = csv.writer(f)
+                writer.writerow(data)
+
+            return redirect(url_for('user_cases'))
+        else:
+            return render_template('report.html')
 
     @app.route('/staff_report', methods=['GET', 'POST'])
     def staff_report():
         if request.method == 'POST':
-            # handle form submission here
-            pass
-        return render_template('staff_report.html')
+            # Extract data from form
+            first_name = request.form.get('first_name')
+            last_name = request.form.get('last_name')
+            item_name = request.form.get('item_name')
+            item_description = request.form.get('item_description')
+
+            # Assign default status as Open
+            status = 'Open'
+
+            # Create a list of the form data u need
+            data = [first_name, last_name,
+                    item_name, item_description, status]
+
+            # Write data to a CSV file
+            with open('cases.csv', 'a', newline='') as f:
+                writer = csv.writer(f)
+                writer.writerow(data)
+
+            return redirect(url_for('view_user_cases'))
+        else:
+            return render_template('staff_report.html')
 
     @app.route('/staffprofile')
     def staff_profile():
@@ -72,7 +111,12 @@ def create_app():
 
     @app.route('/usercases')
     def user_cases():
-        return render_template('usercases.html')
+        cases = []
+        with open('cases.csv', 'r') as f:
+            reader = csv.reader(f)
+            for row in reader:
+                cases.append(row)
+        return render_template('usercases.html', cases=cases)
 
     @app.route('/userhistory')
     def user_history():
@@ -114,7 +158,13 @@ def create_app():
 
     @app.route('/viewusercases')
     def view_user_cases():
-        return render_template('viewusercases.html')
+        # Open the CSV file and read the data
+        with open('cases.csv', 'r') as f:
+            reader = csv.reader(f)
+            cases = list(reader)
+
+        # Pass the data to the template
+        return render_template('viewusercases.html', cases=cases)
 
     return app
 
